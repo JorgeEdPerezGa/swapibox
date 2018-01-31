@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+import Routes from '../../components/Routes';
 import './style.css';
 
 class App extends Component {
   render() {
     return (
       <div className='app'>
-        <header className='app-header'>
-          <h1 className='app-title'>SWAPIBOX</h1>
-        </header>
+        <Routes />
       </div>
     );
   }
