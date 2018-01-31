@@ -9,7 +9,7 @@ const Nav = () => {
       <div className = 'nav-menu'>
         <NavLink className = 'nav' to = '/people'>PEOPLE</NavLink>
         <NavLink className = 'nav' to = '/planets'>PLANETS</NavLink>
-        <p>VEHICLES</p>
+        <NavLink className = 'nav' to = '/vehicles'>VEHICLES</NavLink>
       </div>
     </header>
   );
