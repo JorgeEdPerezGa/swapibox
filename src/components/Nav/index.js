@@ -8,7 +8,7 @@ const Nav = () => {
       <NavLink className = 'nav nav-home' to = '/'>SWAPIBOX</NavLink>
       <div className = 'nav-menu'>
         <NavLink className = 'nav' to = '/people'>PEOPLE</NavLink>
-        <p>PLANETS</p>
+        <NavLink className = 'nav' to = '/planets'>PLANETS</NavLink>
         <p>VEHICLES</p>
       </div>
     </header>
