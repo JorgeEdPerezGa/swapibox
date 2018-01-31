@@ -19,6 +19,11 @@ class Helper {
       const results = await this.fetchPlanets(initialFetch);
       return {results, next, previous};
     }
+
+    if (type === 'vehicles') {
+      const results = await this.fetchVehicles(initialFetch);
+      return {results, next, previous};
+    }
   }
 
   fetchPeople = (initialFetch) => {
@@ -51,12 +56,24 @@ class Helper {
     return Promise.all(planets);
   }
 
-  fetchResidents = async (initialFetch) => {
+  fetchResidents = (initialFetch) => {
     const residents = initialFetch.map( async(fetchResidents) => {
       const resident = await this.fetchData(fetchResidents);
       return resident.name;
     });
     return Promise.all(residents);
+  }
+
+  fetchVehicles = async (initialFetch) => {
+    const vehicles = initialFetch.results.map( vehicle => {
+      const name = vehicle.name;
+      const model = vehicle.model;
+      const manufacturer = vehicle.manufacturer;
+      const vehicleClass = vehicle.vehicle_class;
+      const passengers = vehicle.passengers;
+      return {name, model, manufacturer, vehicleClass, passengers};
+    });
+    return Promise.all(vehicles);
   }
 }
 
