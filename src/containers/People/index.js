@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Helper from '../../helper';
 import CardListNav from '../../components/CardListNav';
+import CardList from '../../components/CardList';
 
 class People extends Component {
   constructor() {
@@ -33,7 +34,6 @@ class People extends Component {
   }
 
   render() {
-    console.log(this.state.people);
 
     return (
       <div>
@@ -43,6 +43,9 @@ class People extends Component {
           fetchFirst = { this.fetchFirst }
           handleFetch = { this.handleFetch }
           fetchLast = { this.fetchLast }/>
+        <CardList
+          title = { 'people' }
+          type = { this.state.people }/>
       </div>
     );
   }
