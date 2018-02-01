@@ -28,7 +28,7 @@ class Helper {
 
   fetchPeople = (initialFetch) => {
     const people = initialFetch.results.map( async(person) => {
-      const fetchSpecies = await this.fetchData(person.species);
+      const fetchSpecies = await this.fetchSpecies(person.species);
       const fetchHomeworld = await this.fetchData(person.homeworld);
       const name = person.name;
       const birthYear = person.birth_year;
@@ -36,12 +36,18 @@ class Helper {
       const mass = person.mass;
       const eyeColor = person.eye_color;
       const skinColor = person.skin_color;
-      const species = fetchSpecies.name;
+      const species = fetchSpecies;
       const homeworld = fetchHomeworld.name;
       const homeworldPopulation = fetchHomeworld.population;
       return { name, birthYear, height, mass, eyeColor, skinColor, species, homeworld, homeworldPopulation };
     });
     return Promise.all(people);
+  }
+
+  fetchSpecies = (initialFetch) => {
+    return initialFetch.map( species => {
+      return species.name;
+    });
   }
 
   fetchPlanets = (initialFetch) => {
