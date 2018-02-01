@@ -22,10 +22,22 @@ class People extends Component {
     this.setState({ people });
   }
 
+  handleMore = async () => {
+    if (this.state.people) {
+      const url = this.state.people.next;
+      const type = 'people';
+      const people = await this.state.helper.fetchSwapi(url, type);
+      this.setState({ people });
+    }
+  }
+
   render() {
     console.log(this.state);
     return (
-      <div>PEOPLE</div>
+      <div>PEOPLE
+      <button>go back</button>
+      <button onClick = {() => this.handleMore()}>more</button>
+    </div>
     );
   }
 }
