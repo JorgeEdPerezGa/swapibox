@@ -47,11 +47,19 @@ class People extends Component {
     this.setState({ people });
   }
 
+  handleFirst = async () => {
+    const url = 'https://swapi.co/api/people/?page=1';
+    const type = 'people';
+    const people = await this.state.helper.fetchSwapi(url, type);
+    this.setState({ people });
+  }
+
   render() {
     console.log(this.state.people);
     return (
       <div>
         <p>PEOPLE</p>
+        <button onClick = { () => this.handleFirst() }>{'<<'}</button>
         <button onClick = { () => this.handlePrevious() }>{'<'}</button>
         <button onClick = { () => this.handleNext() }>{'>'}</button>
         <button onClick = { () => this.handleLast() }>{'>>'}</button>
