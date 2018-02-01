@@ -34,22 +34,24 @@ class People extends Component {
   render() {
     console.log(this.state.people);
     const fetch = this.state.people;
+    const disabledPrevious = !fetch || !fetch.previous;
+    const disabledNext = !fetch || !fetch.next;
 
     return (
       <div>
         <p>PEOPLE</p>
         <button
           onClick = { () => this.fetchPeople() }
-          disabled = {!fetch || !fetch.previous}>{'<<'}</button>
+          disabled = { disabledPrevious }>{'<<'}</button>
         <button
           onClick = { () => this.handleFetch(fetch.previous) }
-          disabled = {!fetch || !fetch.previous}>{'<'}</button>
+          disabled = { disabledPrevious }>{'<'}</button>
         <button
           onClick = { () => this.handleFetch(fetch.next) }
-          disabled = {!fetch || !fetch.next}>{'>'}</button>
+          disabled = { disabledNext }>{'>'}</button>
         <button
           onClick = { () => this.fetchLast() }
-          disabled = {!fetch || !fetch.next}>{'>>'}</button>
+          disabled = { disabledNext }>{'>>'}</button>
       </div>
     );
   }

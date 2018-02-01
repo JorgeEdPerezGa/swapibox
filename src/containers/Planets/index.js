@@ -34,22 +34,24 @@ class Planets extends Component {
   render() {
     console.log(this.state.planets);
     const fetch = this.state.planets;
+    const disabledPrevious = !fetch || !fetch.previous;
+    const disabledNext = !fetch || !fetch.next;
 
     return (
       <div>
         <p>PLANETS</p>
         <button
           onClick = { () => this.fetchPlanets() }
-          disabled = {!fetch || !fetch.previous}>{'<<'}</button>
+          disabled = { disabledPrevious }>{'<<'}</button>
         <button
           onClick = { () => this.handleFetch(fetch.previous) }
-          disabled = {!fetch || !fetch.previous}>{'<'}</button>
+          disabled = { disabledPrevious }>{'<'}</button>
         <button
           onClick = { () => this.handleFetch(fetch.next) }
-          disabled = {!fetch || !fetch.next}>{'>'}</button>
+          disabled = { disabledNext }>{'>'}</button>
         <button
           onClick = { () => this.fetchLast() }
-          disabled = {!fetch || !fetch.next}>{'>>'}</button>
+          disabled = { disabledNext }>{'>>'}</button>
       </div>
     );
   }
