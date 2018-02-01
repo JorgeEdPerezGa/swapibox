@@ -31,6 +31,15 @@ class People extends Component {
     }
   }
 
+  handlePrevious = async() => {
+    if (this.state.people.previous) {
+      const url = this.state.people.previous;
+      const type = 'people';
+      const people = await this.state.helper.fetchSwapi(url, type);
+      this.setState({ people });
+    }
+  }
+
   handleLast = async () => {
     const url = 'https://swapi.co/api/people/?page=9';
     const type = 'people';
@@ -43,7 +52,7 @@ class People extends Component {
     return (
       <div>
         <p>PEOPLE</p>
-        <button>{'<'}</button>
+        <button onClick = { () => this.handlePrevious() }>{'<'}</button>
         <button onClick = { () => this.handleNext() }>{'>'}</button>
         <button onClick = { () => this.handleLast() }>{'>>'}</button>
       </div>
