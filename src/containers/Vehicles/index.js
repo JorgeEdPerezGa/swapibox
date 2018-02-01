@@ -34,22 +34,24 @@ class Vehicles extends Component {
   render() {
     console.log(this.state.vehicles);
     const fetch = this.state.vehicles;
+    const disabledPrevious = !fetch || !fetch.previous;
+    const disabledNext = !fetch || !fetch.next;
 
     return (
       <div>
         <p>VEHICLES</p>
         <button
           onClick = { () => this.fetchVehicles() }
-          disabled = {!fetch || !fetch.previous}>{'<<'}</button>
+          disabled = { disabledPrevious }>{'<<'}</button>
         <button
           onClick = { () => this.handleFetch(fetch.previous) }
-          disabled = {!fetch || !fetch.previous}>{'<'}</button>
+          disabled = { disabledPrevious }>{'<'}</button>
         <button
           onClick = { () => this.handleFetch(fetch.next) }
-          disabled = {!fetch || !fetch.next}>{'>'}</button>
+          disabled = { disabledNext }>{'>'}</button>
         <button
           onClick = { () => this.fetchLast() }
-          disabled = {!fetch || !fetch.next}>{'>>'}</button>
+          disabled = { disabledNext }>{'>>'}</button>
       </div>
     );
   }
