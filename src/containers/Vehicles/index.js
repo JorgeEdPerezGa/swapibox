@@ -15,17 +15,38 @@ class Vehicles extends Component {
     this.fetchVehicles();
   }
 
-  fetchVehicles = async () => {
+  fetchVehicles = () => {
     const url = 'https://swapi.co/api/vehicles/?page=1';
+    this.handleFetch(url);
+  };
+
+  handleFetch = async (url) => {
     const type = 'vehicles';
     const vehicles = await this.state.helper.fetchSwapi(url, type);
     this.setState({ vehicles });
   }
 
+  fetchLast = () => {
+    const url = 'https://swapi.co/api/vehicles/?page=4';
+    this.handleFetch(url);
+  }
+
   render() {
-    console.log(this.state);
+    console.log(this.state.vehicles);
+    const fetch = this.state.vehicles;
+
     return (
-      <div>VEHICLES</div>
+      <div>
+        <p>VEHICLES</p>
+        <button
+          onClick = { () => this.fetchVehicles() }>{'<<'}</button>
+        <button
+          onClick = { () => this.handleFetch(fetch.previous) }>{'<'}</button>
+        <button
+          onClick = { () => this.handleFetch(fetch.next) }>{'>'}</button>
+        <button
+          onClick = { () => this.fetchLast() }>{'>>'}</button>
+      </div>
     );
   }
 }
