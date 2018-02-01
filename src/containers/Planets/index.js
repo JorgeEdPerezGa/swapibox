@@ -8,7 +8,7 @@ class Planets extends Component {
   }
 
   componentWillMount() {
-    this.setState({ helper: new Helper() });
+    this.setState({ helper: new Helper(), planets: '' });
   }
 
   componentDidMount() {
@@ -34,18 +34,22 @@ class Planets extends Component {
   render() {
     console.log(this.state.planets);
     const fetch = this.state.planets;
-    
+
     return (
       <div>
         <p>PLANETS</p>
         <button
-          onClick = { () => this.fetchPlanets() }>{'<<'}</button>
+          onClick = { () => this.fetchPlanets() }
+          disabled = {!fetch || !fetch.previous}>{'<<'}</button>
         <button
-          onClick = { () => this.handleFetch(fetch.previous) }>{'<'}</button>
+          onClick = { () => this.handleFetch(fetch.previous) }
+          disabled = {!fetch || !fetch.previous}>{'<'}</button>
         <button
-          onClick = { () => this.handleFetch(fetch.next) }>{'>'}</button>
+          onClick = { () => this.handleFetch(fetch.next) }
+          disabled = {!fetch || !fetch.next}>{'>'}</button>
         <button
-          onClick = { () => this.fetchLast() }>{'>>'}</button>
+          onClick = { () => this.fetchLast() }
+          disabled = {!fetch || !fetch.next}>{'>>'}</button>
       </div>
     );
   }
