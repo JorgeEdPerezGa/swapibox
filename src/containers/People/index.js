@@ -8,7 +8,7 @@ class People extends Component {
   }
 
   componentWillMount() {
-    this.setState({ helper: new Helper() });
+    this.setState({ helper: new Helper(), people: '' });
   }
 
   componentDidMount() {
@@ -39,13 +39,17 @@ class People extends Component {
       <div>
         <p>PEOPLE</p>
         <button
-          onClick = { () => this.fetchPeople() }>{'<<'}</button>
+          onClick = { () => this.fetchPeople() }
+          disabled = {!fetch || !fetch.previous}>{'<<'}</button>
         <button
-          onClick = { () => this.handleFetch(fetch.previous) }>{'<'}</button>
+          onClick = { () => this.handleFetch(fetch.previous) }
+          disabled = {!fetch || !fetch.previous}>{'<'}</button>
         <button
-          onClick = { () => this.handleFetch(fetch.next) }>{'>'}</button>
+          onClick = { () => this.handleFetch(fetch.next) }
+          disabled = {!fetch || !fetch.next}>{'>'}</button>
         <button
-          onClick = { () => this.fetchLast() }>{'>>'}</button>
+          onClick = { () => this.fetchLast() }
+          disabled = {!fetch || !fetch.next}>{'>>'}</button>
       </div>
     );
   }
