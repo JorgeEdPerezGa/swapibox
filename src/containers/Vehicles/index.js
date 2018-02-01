@@ -8,7 +8,7 @@ class Vehicles extends Component {
   }
 
   componentWillMount() {
-    this.setState({ helper: new Helper() });
+    this.setState({ helper: new Helper(), vehicles: '' });
   }
 
   componentDidMount() {
@@ -39,13 +39,17 @@ class Vehicles extends Component {
       <div>
         <p>VEHICLES</p>
         <button
-          onClick = { () => this.fetchVehicles() }>{'<<'}</button>
+          onClick = { () => this.fetchVehicles() }
+          disabled = {!fetch || !fetch.previous}>{'<<'}</button>
         <button
-          onClick = { () => this.handleFetch(fetch.previous) }>{'<'}</button>
+          onClick = { () => this.handleFetch(fetch.previous) }
+          disabled = {!fetch || !fetch.previous}>{'<'}</button>
         <button
-          onClick = { () => this.handleFetch(fetch.next) }>{'>'}</button>
+          onClick = { () => this.handleFetch(fetch.next) }
+          disabled = {!fetch || !fetch.next}>{'>'}</button>
         <button
-          onClick = { () => this.fetchLast() }>{'>>'}</button>
+          onClick = { () => this.fetchLast() }
+          disabled = {!fetch || !fetch.next}>{'>>'}</button>
       </div>
     );
   }
