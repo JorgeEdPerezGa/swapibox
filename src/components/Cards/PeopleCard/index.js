@@ -1,4 +1,5 @@
 import React from 'react';
+import Favorites from '../../../containers/Favorites';
 
 const PeopleCard = ({ name, birthYear, eyeColor, height, mass, skinColor, homeworld, homeworldPopulation }) => {
   return (
@@ -11,6 +12,7 @@ const PeopleCard = ({ name, birthYear, eyeColor, height, mass, skinColor, homewo
       <p>skin color: { skinColor }</p>
       <p>homeworld: { homeworld }</p>
       <p>homeworld population: { homeworldPopulation }</p>
+      <Favorites />
     </article>
   );
 };
