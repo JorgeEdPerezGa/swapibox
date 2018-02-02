@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Helper from '../../helper';
+import CardListNav from '../../components/CardListNav';
 
 class Vehicles extends Component {
   constructor() {
@@ -12,10 +13,10 @@ class Vehicles extends Component {
   }
 
   componentDidMount() {
-    this.fetchVehicles();
+    this.fetchFirst();
   }
 
-  fetchVehicles = () => {
+  fetchFirst = () => {
     const url = 'https://swapi.co/api/vehicles/?page=1';
     this.handleFetch(url);
   };
@@ -33,25 +34,15 @@ class Vehicles extends Component {
 
   render() {
     console.log(this.state.vehicles);
-    const fetch = this.state.vehicles;
-    const disabledPrevious = !fetch || !fetch.previous;
-    const disabledNext = !fetch || !fetch.next;
 
     return (
       <div>
         <p>VEHICLES</p>
-        <button
-          onClick = { () => this.fetchVehicles() }
-          disabled = { disabledPrevious }>{'<<'}</button>
-        <button
-          onClick = { () => this.handleFetch(fetch.previous) }
-          disabled = { disabledPrevious }>{'<'}</button>
-        <button
-          onClick = { () => this.handleFetch(fetch.next) }
-          disabled = { disabledNext }>{'>'}</button>
-        <button
-          onClick = { () => this.fetchLast() }
-          disabled = { disabledNext }>{'>>'}</button>
+        <CardListNav
+          type = { this.state.vehicles }
+          fetchFirst = { this.fetchFirst }
+          handleFetch = { this.handleFetch }
+          fetchLast = { this.fetchLast }/>
       </div>
     );
   }
