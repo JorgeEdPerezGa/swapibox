@@ -1,9 +1,10 @@
 import React from 'react';
 import PeopleCard from '../Cards/PeopleCard';
+import PlanetCard from '../Cards/PlanetCard';
 
 const CardList = ({ title, type }) => {
 
-  if (type) {
+  if (type && title === 'people') {
     let cards = type.results.map( (card, index) => {
       return (
         <PeopleCard
@@ -25,6 +26,26 @@ const CardList = ({ title, type }) => {
       </section>
     );
   }
+
+  if (type && title === 'planets') {
+    let cards = type.results.map( (card, index) => {
+      return (
+        <PlanetCard
+          key = {`${index}${card.name}`}
+          name = { card.name }
+          climate = { card.climate }
+          population = { card.population }
+          residents = { card.residents }/>
+      );
+    });
+
+    return (
+      <section className = {`card-list-${title}`}>
+        { cards }
+      </section>
+    );
+  }
+
   return (
     <div>loading</div>
   );
