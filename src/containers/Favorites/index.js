@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
-import CardList from '../../components/CardList';
 
 class Favorites extends Component {
-  constructor() {
+  constructor(){
     super();
     this.state = {};
   }
 
+  handleFavorites = () => {
+    console.log('favorite');
+  }
+
   render(){
     return (
-      <div>FAVORITES</div>
+      <button
+        onClick = {() => this.handleFavorites() }
+        className = 'favorite-button'>favorite</button>
     );
   }
 }
