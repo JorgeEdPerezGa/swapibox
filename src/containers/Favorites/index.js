@@ -1,22 +1,11 @@
 import React, { Component } from 'react';
 
-class Favorites extends Component {
-  constructor(){
-    super();
-    this.state = {};
-  }
-
-  handleFavorites = () => {
-    console.log('favorite');
-  }
-
-  render(){
-    return (
-      <button
-        onClick = {() => this.handleFavorites() }
-        className = 'favorite-button'>favorite</button>
-    );
-  }
-}
+const Favorites = ({ card, handleFavorites }) => {
+  return (
+    <button
+      onClick = {() => handleFavorites(card) }
+      className = 'favorite-button'>favorite</button>
+  );
+};
 
 export default Favorites;
