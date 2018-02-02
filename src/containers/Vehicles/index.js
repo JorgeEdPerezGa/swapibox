@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Helper from '../../helper';
 import CardListNav from '../../components/CardListNav';
+import CardList from '../../components/CardList';
 
 class Vehicles extends Component {
   constructor() {
@@ -43,6 +44,10 @@ class Vehicles extends Component {
           fetchFirst = { this.fetchFirst }
           handleFetch = { this.handleFetch }
           fetchLast = { this.fetchLast }/>
+
+        <CardList
+          title = { 'vehicles' }
+          type = { this.state.vehicles }/>
       </div>
     );
   }
