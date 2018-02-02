@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Helper from '../../helper';
 import CardListNav from '../../components/CardListNav';
+import CardList from '../../components/CardList';
 
 class Planets extends Component {
   constructor() {
@@ -43,6 +44,10 @@ class Planets extends Component {
           fetchFirst = { this.fetchFirst }
           handleFetch = { this.handleFetch }
           fetchLast = { this.fetchLast }/>
+
+        <CardList
+          title = { 'planets' }
+          type = { this.state.planets }/>
       </div>
     );
   }
