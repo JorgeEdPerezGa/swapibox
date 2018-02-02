@@ -4,6 +4,7 @@ import Nav from '../Nav';
 import People from '../../containers/People';
 import Planets from '../../containers/Planets';
 import Vehicles from '../../containers/Vehicles';
+import Favorites from '../../containers/Favorites';
 
 const Routes = () => {
   return (
@@ -12,6 +13,7 @@ const Routes = () => {
       <Route path = '/people' component = { People }/>
       <Route path = '/planets' component = { Planets }/>
       <Route path = '/vehicles' component = { Vehicles }/>
+      <Route path = '/favorites' component = { Favorites }/>
     </div>
   );
 };
