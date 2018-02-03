@@ -1,5 +1,5 @@
 import React from 'react';
-import Favorites from '../../../containers/Favorites';
+import FavoriteButton from '../../FavoriteButton';
 
 const VehicleCard = ({ card, name, model, vehicleClass, passengers, manufacturer, handleFavorites }) => {
 
@@ -10,7 +10,7 @@ const VehicleCard = ({ card, name, model, vehicleClass, passengers, manufacturer
       <p>class: { vehicleClass }</p>
       <p>passenger capacity: { passengers }</p>
       <p>manufacturer: { manufacturer }</p>
-      <Favorites
+      <FavoriteButton
         handleFavorites = { handleFavorites }
         card = {card}/>
     </article>
