@@ -48,10 +48,12 @@ class CardList extends Component {
           return (
             <PlanetCard
               key = {`${index}${card.name}`}
+              card = { card }
               name = { card.name }
               climate = { card.climate }
               population = { card.population }
-              residents = { card.residents }/>
+              residents = { card.residents }
+              handleFavorites = { this.handleFavorites }/>
           );
         }
 

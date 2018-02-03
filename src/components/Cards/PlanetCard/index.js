@@ -1,7 +1,7 @@
 import React from 'react';
 import Favorites from '../../../containers/Favorites';
 
-const PlanetCard = ({ name, climate, population, residents}) => {
+const PlanetCard = ({ card, name, climate, population, residents, handleFavorites }) => {
 
   return (
     <article className = 'card'>
@@ -9,7 +9,9 @@ const PlanetCard = ({ name, climate, population, residents}) => {
       <p>climate: { climate }</p>
       <p>population: { population }</p>
       <p>residents: { residents } </p>
-      <Favorites />
+      <Favorites
+        handleFavorites = { handleFavorites }
+        card = { card }/>
     </article>
   );
 };
