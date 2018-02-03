@@ -1,5 +1,5 @@
 import React from 'react';
-import Favorites from '../../../containers/Favorites';
+import FavoriteButton from '../../FavoriteButton';
 
 const PeopleCard = ({ card, name, birthYear, eyeColor, height, mass, skinColor, homeworld, homeworldPopulation, handleFavorites }) => {
   return (
@@ -12,7 +12,7 @@ const PeopleCard = ({ card, name, birthYear, eyeColor, height, mass, skinColor, 
       <p>skin color: { skinColor }</p>
       <p>homeworld: { homeworld }</p>
       <p>homeworld population: { homeworldPopulation }</p>
-      <Favorites
+      <FavoriteButton
         handleFavorites = { handleFavorites }
         card = { card }/>
     </article>
