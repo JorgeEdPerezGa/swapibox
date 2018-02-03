@@ -61,11 +61,13 @@ class CardList extends Component {
           return (
             <VehicleCard
               key = {`${index}${card.name}`}
+              card = { card }
               name = { card.name }
               model = { card.model }
               vehicleClass = { card.vehicleClass }
               passengers = { card.passengers }
-              manufacturer = { card.manufacturer }/>
+              manufacturer = { card.manufacturer }
+              handleFavorites = { this.handleFavorites }/>
           );
         }
 
