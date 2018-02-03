@@ -23,75 +23,64 @@ class CardList extends Component {
     this.setState({ favorites: newFavorites });
   }
 
+  renderCards = () => {
+    if (this.props.type) {
+      let cards = this.props.type.results.map( (card, index) => {
+
+        if (this.props.type && this.props.title === 'people') {
+          return (
+            <PeopleCard
+              key = {`${index}${card.name}`}
+              card = { card }
+              name = { card.name }
+              birthYear = { card.birthYear }
+              eyeColor = { card.eyeColor }
+              skinColor = { card.skinColor }
+              height = { card.height }
+              mass = { card.mass }
+              homeworld = { card.homeworld }
+              homeworldPopulation = { card.homeworldPopulation }
+              handleFavorites = { this.handleFavorites }/>
+          );
+        }
+
+        if (this.props.type && this.props.title === 'planets') {
+          return (
+            <PlanetCard
+              key = {`${index}${card.name}`}
+              name = { card.name }
+              climate = { card.climate }
+              population = { card.population }
+              residents = { card.residents }/>
+          );
+        }
+
+        if (this.props.type && this.props.title === 'vehicles') {
+          return (
+            <VehicleCard
+              key = {`${index}${card.name}`}
+              name = { card.name }
+              model = { card.model }
+              vehicleClass = { card.vehicleClass }
+              passengers = { card.passengers }
+              manufacturer = { card.manufacturer }/>
+          );
+        }
+      });
+
+      return ( <section className = {`card-list-${this.props.title}`}>
+        { cards } </section> );
+    } else {
+      return ( <div>loading</div> );
+    }
+  }
+
   render() {
     console.log(this.state.favorites);
-    if (this.props.type && this.props.title === 'people') {
-      let cards = this.props.type.results.map( (card, index) => {
-        return (
-          <PeopleCard
-            key = {`${index}${card.name}`}
-            card = { card }
-            name = { card.name }
-            birthYear = { card.birthYear }
-            eyeColor = { card.eyeColor }
-            skinColor = { card.skinColor }
-            height = { card.height }
-            mass = { card.mass }
-            homeworld = { card.homeworld }
-            homeworldPopulation = { card.homeworldPopulation }
-            handleFavorites = { this.handleFavorites }/>
-        );
-      });
-
-      return (
-        <section className = {`card-list-${this.props.title}`}>
-          { cards }
-        </section>
-      );
-    }
-
-    if (this.props.type && this.props.title === 'planets') {
-      let cards = this.props.type.results.map( (card, index) => {
-        return (
-          <PlanetCard
-            key = {`${index}${card.name}`}
-            name = { card.name }
-            climate = { card.climate }
-            population = { card.population }
-            residents = { card.residents }/>
-        );
-      });
-
-      return (
-        <section className = {`card-list-${this.props.title}`}>
-          { cards }
-        </section>
-      );
-    }
-
-    if (this.props.type && this.props.title === 'vehicles') {
-      let cards = this.props.type.results.map( (card, index) => {
-        console.log(card);
-        return (
-          <VehicleCard
-            key = {`${index}${card.name}`}
-            name = { card.name }
-            model = { card.model }
-            vehicleClass = { card.vehicleClass }
-            passengers = { card.passengers }
-            manufacturer = { card.manufacturer }/>
-        );
-      });
-
-      return (
-        <section className = {`card-list-${this.props.title}`}>
-          { cards }
-        </section>
-      );
-    }
-
     return (
-      <div>loading</div>
+      <div>
+        {this.renderCards()}
+      </div>
     );
   }
 }
