@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Helper from '../../helper';
 import CardListNav from '../../components/CardListNav';
-import CardList from '../../components/CardList';
+import CardList from '../CardList';
 
 class Planets extends Component {
   constructor() {

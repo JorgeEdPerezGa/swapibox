@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import PeopleCard from '../Cards/PeopleCard';
-import PlanetCard from '../Cards/PlanetCard';
-import VehicleCard from '../Cards/VehicleCard';
+import PeopleCard from '../../components/Cards/PeopleCard';
+import PlanetCard from '../../components/Cards/PlanetCard';
+import VehicleCard from '../../components/Cards/VehicleCard';
 
 class CardList extends Component {
   constructor() {
@@ -66,10 +66,14 @@ class CardList extends Component {
               manufacturer = { card.manufacturer }/>
           );
         }
+
       });
 
-      return ( <section className = {`card-list-${this.props.title}`}>
-        { cards } </section> );
+      return (
+        <section className = {`card-list-${this.props.title}`}>
+          { cards }
+        </section>
+      );
     } else {
       return ( <div>loading</div> );
     }
