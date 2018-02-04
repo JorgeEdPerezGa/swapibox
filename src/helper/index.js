@@ -58,9 +58,11 @@ class Helper {
 
   fetchSpecies = async (initialFetch) => {
     try {
-      return initialFetch.map( species => {
-        return species.name;
+      const species = initialFetch.map( async (fetchSpecies) => {
+        const  type = await this.fetchData(fetchSpecies);
+        return type.name;
       });
+      return Promise.all(species);
     } catch (error) {
       return Error('error');
     }
