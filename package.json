@@ -19,7 +19,8 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "eslint": "./node_modules/eslint/bin/eslint.js ./src/*.js ./src/components/*/*.js ./src/containers/*/*.js"
+    "eslint": "./node_modules/eslint/bin/eslint.js ./src/*.js ./src/components/*/*.js ./src/containers/*/*.js",
+    "test:debug": "react-scripts --inspect-brk test --runInBand --env=jsdom"
   },
   "devDependencies": {
     "eslint": "^4.16.0",

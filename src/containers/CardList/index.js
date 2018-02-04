@@ -38,6 +38,7 @@ class CardList extends Component {
               skinColor = { card.skinColor }
               height = { card.height }
               mass = { card.mass }
+              species = { card.species }
               homeworld = { card.homeworld }
               homeworldPopulation = { card.homeworldPopulation }
               handleFavorites = { this.handleFavorites }/>
