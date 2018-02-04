@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './style.css';
 
 const CardListNav = ({ type, fetchFirst, handleFetch, fetchLast }) => {
   const fetch = type;
@@ -8,17 +9,21 @@ const CardListNav = ({ type, fetchFirst, handleFetch, fetchLast }) => {
   return (
     <div>
       <button
+        className = 'card-list-nav-button first-button'
         onClick = { () => fetchFirst() }
-        disabled = { disabledPrevious }>{'<<'}</button>
+        disabled = { disabledPrevious }></button>
       <button
+        className = 'card-list-nav-button previous-button'
         onClick = { () => handleFetch(fetch.previous) }
-        disabled = { disabledPrevious }>{'<'}</button>
+        disabled = { disabledPrevious }></button>
       <button
+        className = 'card-list-nav-button next-button'
         onClick = { () => handleFetch(fetch.next) }
-        disabled = { disabledNext }>{'>'}</button>
+        disabled = { disabledNext }></button>
       <button
+        className = 'card-list-nav-button last-button'
         onClick = { () => fetchLast() }
-        disabled = { disabledNext }>{'>>'}</button>
+        disabled = { disabledNext }></button>
     </div>
   );
 };

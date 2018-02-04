@@ -1,0 +1,55 @@
+.card-list-nav-button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  margin: 0 12px 0 12px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:disabled {
+    cursor: auto;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.first-button {
+  background-image: url('../../assets/first.svg');
+  &:hover {
+    background-image: url('../../assets/first-hover.svg');
+  }
+  &:disabled {
+    background-image: url('../../assets/first-disabled.svg');
+  }
+}
+
+.previous-button {
+  background-image: url('../../assets/previous.svg');
+  &:hover {
+    background-image: url('../../assets/previous-hover.svg');
+  }
+  &:disabled {
+    background-image: url('../../assets/previous-disabled.svg');
+  }
+}
+
+.next-button {
+  background-image: url('../../assets/next.svg');
+  &:hover {
+    background-image: url('../../assets/next-hover.svg');
+  }
+  &:disabled {
+    background-image: url('../../assets/next-disabled.svg');
+  }
+}
+
+.last-button {
+  background-image: url('../../assets/last.svg');
+  &:hover {
+    background-image: url('../../assets/last-hover.svg');
+  }
+  &:disabled {
+    background-image: url('../../assets/last-disabled.svg');
+  }
+}
