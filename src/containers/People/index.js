@@ -23,9 +23,14 @@ class People extends Component {
   }
 
   handleFetch = async (url) => {
-    const type = 'people';
-    const people = await this.state.helper.fetchSwapi(url, type);
-    this.setState({ people });
+    if (!localStorage.getItem(url)){
+      const type = 'people';
+      const people = await this.state.helper.fetchSwapi(url, type);
+      this.setState({ people });
+      localStorage.setItem(url, JSON.stringify(people));
+    } else {
+      this.setState({people: JSON.parse(localStorage.getItem(url))});
+    }
   }
 
   fetchLast = async () => {
