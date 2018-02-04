@@ -23,9 +23,14 @@ class Planets extends Component {
   };
 
   handleFetch = async (url) => {
-    const type = 'planets';
-    const planets = await this.state.helper.fetchSwapi(url, type);
-    this.setState({ planets });
+    if (!localStorage.getItem(url)){
+      const type = 'planets';
+      const planets = await this.state.helper.fetchSwapi(url, type);
+      this.setState({ planets });
+      localStorage.setItem(url, JSON.stringify(planets));
+    } else {
+      this.setState({planets: JSON.parse(localStorage.getItem(url))});
+    }
   }
 
   fetchLast = () => {
