@@ -23,9 +23,14 @@ class Vehicles extends Component {
   };
 
   handleFetch = async (url) => {
-    const type = 'vehicles';
-    const vehicles = await this.state.helper.fetchSwapi(url, type);
-    this.setState({ vehicles });
+    if (!localStorage.getItem(url)){
+      const type = 'vehicles';
+      const vehicles = await this.state.helper.fetchSwapi(url, type);
+      this.setState({ vehicles });
+      localStorage.setItem(url, JSON.stringify(vehicles));
+    } else {
+      this.setState({vehicles: JSON.parse(localStorage.getItem(url))});
+    }
   }
 
   fetchLast = () => {
