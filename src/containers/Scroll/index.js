@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './style.css';
 
 class Scroll extends Component {
   constructor(){
     super();
-    this.state = {}
+    this.state = {};
   }
 
   componentDidMount() {
@@ -22,8 +23,7 @@ class Scroll extends Component {
   }
 
   render (){
-    const scroll = this.state.scroll
-    console.log(this.state);
+    const scroll = this.state.scroll;
     if (!this.state.scroll) {
       return (
         <div>loading</div>
@@ -32,19 +32,44 @@ class Scroll extends Component {
 
     return (
       <div className='scroll'>
-        scroll
-        <div className='fade'>
-        </div>
+        <div className='fade'></div>
         <div className='star-wars'>
           <div className='crawl'>
-            <p className='film-title'>{ scroll.title }</p>
-            <p className='release-date'>{ scroll.episode }</p>
-            <p className='crawl-text'>{ scroll.text }</p>
+            <p className='title'>{ scroll.title }</p>
+            <p className='episode'>{ scroll.episode }</p>
+            <p className='text'>{ scroll.text }</p>
           </div>
         </div>
       </div>
+//       {/* <div className="star-wars-intro">
+//
+//   {/* <!-- Blue Intro Text --> */}
+//   <p class="intro-text">
+//     A few days ago, during...
+//   </p>
+//
+//   {/* <!-- Logo Image or Text goes in here --> */}
+//   {/* <h2 class="main-logo">
+//     <img src="img/star-wars-intro.png">
+//   </h2> */}
+// {/*
+//   <!-- All Scrolling Content Goes in here --> */}
+//   <div className="main-content">
+//
+//     <div className="title-content">
+//       <p className="content-header">{ scroll.episode }</p>
+//
+//       <p className="content-body">
+//       { scroll.text }
+//       </p>
+//
+//       {/* <a class="space-button">Download The Code Now!</a> */}
+//
+//     </div>
+//   </div>
+// </div> */}
     );
   }
-};
+}
 
 export default Scroll;
