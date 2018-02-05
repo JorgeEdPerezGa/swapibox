@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PeopleCard from '../../components/Cards/PeopleCard';
 import PlanetCard from '../../components/Cards/PlanetCard';
 import VehicleCard from '../../components/Cards/VehicleCard';
+import PropTypes from 'prop-types';
 import './style.css';
 
 class CardList extends Component {
@@ -81,5 +82,12 @@ class CardList extends Component {
     );
   }
 }
+
+CardList.propTypes = {
+  handleFavorites: PropTypes.func,
+  results: PropTypes.array,
+  type: PropTypes.object,
+  title: PropTypes.string
+};
 
 export default CardList;

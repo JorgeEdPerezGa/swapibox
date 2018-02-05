@@ -3,6 +3,7 @@ import Helper from '../../helper';
 import CardListNav from '../../components/CardListNav';
 import CardList from '../CardList';
 import FavoriteCard from '../../components/Cards/FavoriteCard';
+import PropTypes from 'prop-types';
 import './style.css';
 
 class Favorites extends Component {
@@ -55,5 +56,11 @@ class Favorites extends Component {
     );
   }
 }
+
+Favorites.propTypes = {
+  type: PropTypes.array,
+  handleFavorites: PropTypes.func,
+  title: PropTypes.string
+};
 
 export default Favorites;

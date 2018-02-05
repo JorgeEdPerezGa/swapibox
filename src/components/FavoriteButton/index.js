@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './style.css';
 
 const FavoriteButton = ({ card, handleFavorites, favortieClass }) => {
@@ -7,6 +8,12 @@ const FavoriteButton = ({ card, handleFavorites, favortieClass }) => {
       onClick = {() => handleFavorites(card) }
       className = {`favorite-button ${favortieClass}`}></button>
   );
+};
+
+FavoriteButton.propTypes = {
+  card: PropTypes.object,
+  handleFavorites: PropTypes.func,
+  favortieClass: PropTypes.string
 };
 
 export default FavoriteButton;

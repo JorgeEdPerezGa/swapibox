@@ -3,6 +3,7 @@ import Helper from '../../helper';
 import CardListNav from '../../components/CardListNav';
 import CardList from '../CardList';
 import PeopleVideo from '../../components/PeopleVideo';
+import PropTypes from 'prop-types';
 import './style.css';
 
 class People extends Component {
@@ -45,6 +46,7 @@ class People extends Component {
     return (
       <div>
         <div className = 'video-container'>
+          {/* <p className = 'page-title'>PEOPLE</p> */}
           <PeopleVideo />
         </div>
         <CardListNav
@@ -60,5 +62,9 @@ class People extends Component {
     );
   }
 }
+
+People.propTypes = {
+  handleFavorites: PropTypes.func
+};
 
 export default People;
