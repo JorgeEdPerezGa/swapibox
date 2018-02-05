@@ -1,0 +1,16 @@
+.favorite-button {
+  position: absolute;
+  background: none;
+  background-image: url('../../assets/like.svg');
+  border: none;
+  height: 30px;
+  width: 30px;
+  margin: 20px 0 0 245px;
+  &:hover {
+    background-image: url('../../assets/like-hover.svg');
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
