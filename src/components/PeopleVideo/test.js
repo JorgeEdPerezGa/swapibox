@@ -4,7 +4,7 @@ import setupTest from '../../setupTests';
 import { shallow } from 'enzyme';
 
 describe('<PeopleVideo/>', () => {
-  const wrapper = <PeopleVideo />;
+  const wrapper = shallow(<PeopleVideo />);
 
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();

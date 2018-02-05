@@ -4,7 +4,7 @@ import setupTest from '../../setupTests';
 import { shallow } from 'enzyme';
 
 describe('<FavoriteButton/>', () => {
-  const wrapper = <FavoriteButton />;
+  const wrapper = shallow(<FavoriteButton />);
 
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
