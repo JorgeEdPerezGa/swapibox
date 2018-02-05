@@ -4,7 +4,7 @@ import setupTest from '../../../setupTests';
 import { shallow } from 'enzyme';
 
 describe('<PlanetCard/>', () => {
-  const wrapper = <PlanetCard />;
+  const wrapper = shallow(<PlanetCard />);
 
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();

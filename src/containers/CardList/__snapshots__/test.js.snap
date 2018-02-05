@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PlanetVideo/> should match snapshot 1`] = `
+exports[`<CardList/> should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PlanetsVideo />,
+  Symbol(enzyme.__unrendered__): <CardList />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,19 +17,14 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <video
-        autoPlay={true}
-        className="background-video"
-        loop={true}
-        muted={true}
-        playsInline={true}
-        poster="planets.mp4"
->
-        <source
-                src="planets.mp4"
-                type="video/mp4"
+      "children": <div>
+        <img
+                height="200px"
+                src="https://cdnb.artstation.com/p/assets/images/images/003/827/899/original/matthew-garwin-loading-vector.gif?1477723699"
+                width="200px"
         />
-</video>,
+</div>,
+      "className": "card-list",
     },
     "ref": null,
     "rendered": Object {
@@ -37,16 +32,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "autoPlay": true,
-        "children": <source
-          src="planets.mp4"
-          type="video/mp4"
+        "children": <img
+          height="200px"
+          src="https://cdnb.artstation.com/p/assets/images/images/003/827/899/original/matthew-garwin-loading-vector.gif?1477723699"
+          width="200px"
 />,
-        "className": "background-video",
-        "loop": true,
-        "muted": true,
-        "playsInline": true,
-        "poster": "planets.mp4",
       },
       "ref": null,
       "rendered": Object {
@@ -54,14 +44,15 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "src": "planets.mp4",
-          "type": "video/mp4",
+          "height": "200px",
+          "src": "https://cdnb.artstation.com/p/assets/images/images/003/827/899/original/matthew-garwin-loading-vector.gif?1477723699",
+          "width": "200px",
         },
         "ref": null,
         "rendered": null,
-        "type": "source",
+        "type": "img",
       },
-      "type": "video",
+      "type": "div",
     },
     "type": "div",
   },
@@ -71,19 +62,14 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <video
-          autoPlay={true}
-          className="background-video"
-          loop={true}
-          muted={true}
-          playsInline={true}
-          poster="planets.mp4"
->
-          <source
-                    src="planets.mp4"
-                    type="video/mp4"
+        "children": <div>
+          <img
+                    height="200px"
+                    src="https://cdnb.artstation.com/p/assets/images/images/003/827/899/original/matthew-garwin-loading-vector.gif?1477723699"
+                    width="200px"
           />
-</video>,
+</div>,
+        "className": "card-list",
       },
       "ref": null,
       "rendered": Object {
@@ -91,16 +77,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "autoPlay": true,
-          "children": <source
-            src="planets.mp4"
-            type="video/mp4"
+          "children": <img
+            height="200px"
+            src="https://cdnb.artstation.com/p/assets/images/images/003/827/899/original/matthew-garwin-loading-vector.gif?1477723699"
+            width="200px"
 />,
-          "className": "background-video",
-          "loop": true,
-          "muted": true,
-          "playsInline": true,
-          "poster": "planets.mp4",
         },
         "ref": null,
         "rendered": Object {
@@ -108,14 +89,15 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "src": "planets.mp4",
-            "type": "video/mp4",
+            "height": "200px",
+            "src": "https://cdnb.artstation.com/p/assets/images/images/003/827/899/original/matthew-garwin-loading-vector.gif?1477723699",
+            "width": "200px",
           },
           "ref": null,
           "rendered": null,
-          "type": "source",
+          "type": "img",
         },
-        "type": "video",
+        "type": "div",
       },
       "type": "div",
     },

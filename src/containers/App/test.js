@@ -5,8 +5,8 @@ import setupTest from '../../setupTests';
 import { shallow } from 'enzyme';
 
 describe('<App/>', () => {
-  const wrapper = <App />;
-  
+  const wrapper = shallow(<App />);
+
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });

@@ -1,3 +1,279 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<VehicleCard/> should match snapshot 1`] = `<VehicleCard />`;
+exports[`<VehicleCard/> should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <VehicleCard />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <FavoriteButton
+          card={undefined}
+          favortieClass=""
+          handleFavorites={undefined}
+/>,
+        <h1
+          className="card-title card-title-vehicle"
+/>,
+        <p>
+          model: 
+</p>,
+        <p>
+          class: 
+</p>,
+        <p>
+          passenger capacity: 
+</p>,
+        <p>
+          manufacturer: 
+</p>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "card": undefined,
+          "favortieClass": "",
+          "handleFavorites": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "card-title card-title-vehicle",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "model: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "model: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "class: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "class: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "passenger capacity: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "passenger capacity: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "manufacturer: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "manufacturer: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <FavoriteButton
+            card={undefined}
+            favortieClass=""
+            handleFavorites={undefined}
+/>,
+          <h1
+            className="card-title card-title-vehicle"
+/>,
+          <p>
+            model: 
+</p>,
+          <p>
+            class: 
+</p>,
+          <p>
+            passenger capacity: 
+</p>,
+          <p>
+            manufacturer: 
+</p>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "card": undefined,
+            "favortieClass": "",
+            "handleFavorites": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "card-title card-title-vehicle",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "model: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "model: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "class: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "class: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "passenger capacity: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "passenger capacity: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "manufacturer: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "manufacturer: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

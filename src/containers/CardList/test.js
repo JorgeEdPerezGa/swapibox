@@ -1,10 +1,11 @@
 import React from 'react';
-import VehicleVideo from './index';
+import ReactDOM from 'react-dom';
+import CardList from './index';
 import setupTest from '../../setupTests';
 import { shallow } from 'enzyme';
 
-describe('<VehicleVideo/>', () => {
-  const wrapper = shallow(<VehicleVideo />);
+describe('<CardList/>', () => {
+  const wrapper = shallow(<CardList />);
 
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();

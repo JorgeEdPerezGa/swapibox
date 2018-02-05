@@ -1,3 +1,419 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Nav/> should match snapshot 1`] = `<Nav />`;
+exports[`<Nav/> should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Nav />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="nav nav-home"
+          to="/"
+>
+          SWAPIBOX
+</NavLink>,
+        <div
+          className="nav-menu"
+>
+          <NavLink
+                    activeClassName="active"
+                    ariaCurrent="true"
+                    className="nav"
+                    to="/people"
+          >
+                    PEOPLE
+          </NavLink>
+          <NavLink
+                    activeClassName="active"
+                    ariaCurrent="true"
+                    className="nav"
+                    to="/planets"
+          >
+                    PLANETS
+          </NavLink>
+          <NavLink
+                    activeClassName="active"
+                    ariaCurrent="true"
+                    className="nav"
+                    to="/vehicles"
+          >
+                    VEHICLES
+          </NavLink>
+          <p
+                    className="count"
+          />
+          <NavLink
+                    activeClassName="active"
+                    ariaCurrent="true"
+                    className="nav favorite-nav"
+                    to="/favorites"
+          >
+                    FAVORITES
+          </NavLink>
+</div>,
+      ],
+      "className": "nav-header",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "SWAPIBOX",
+          "className": "nav nav-home",
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "SWAPIBOX",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="nav"
+              to="/people"
+>
+              PEOPLE
+</NavLink>,
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="nav"
+              to="/planets"
+>
+              PLANETS
+</NavLink>,
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="nav"
+              to="/vehicles"
+>
+              VEHICLES
+</NavLink>,
+            <p
+              className="count"
+/>,
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="nav favorite-nav"
+              to="/favorites"
+>
+              FAVORITES
+</NavLink>,
+          ],
+          "className": "nav-menu",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "children": "PEOPLE",
+              "className": "nav",
+              "to": "/people",
+            },
+            "ref": null,
+            "rendered": "PEOPLE",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "children": "PLANETS",
+              "className": "nav",
+              "to": "/planets",
+            },
+            "ref": null,
+            "rendered": "PLANETS",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "children": "VEHICLES",
+              "className": "nav",
+              "to": "/vehicles",
+            },
+            "ref": null,
+            "rendered": "VEHICLES",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "count",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "children": "FAVORITES",
+              "className": "nav favorite-nav",
+              "to": "/favorites",
+            },
+            "ref": null,
+            "rendered": "FAVORITES",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="nav nav-home"
+            to="/"
+>
+            SWAPIBOX
+</NavLink>,
+          <div
+            className="nav-menu"
+>
+            <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        className="nav"
+                        to="/people"
+            >
+                        PEOPLE
+            </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        className="nav"
+                        to="/planets"
+            >
+                        PLANETS
+            </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        className="nav"
+                        to="/vehicles"
+            >
+                        VEHICLES
+            </NavLink>
+            <p
+                        className="count"
+            />
+            <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        className="nav favorite-nav"
+                        to="/favorites"
+            >
+                        FAVORITES
+            </NavLink>
+</div>,
+        ],
+        "className": "nav-header",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "SWAPIBOX",
+            "className": "nav nav-home",
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "SWAPIBOX",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="nav"
+                to="/people"
+>
+                PEOPLE
+</NavLink>,
+              <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="nav"
+                to="/planets"
+>
+                PLANETS
+</NavLink>,
+              <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="nav"
+                to="/vehicles"
+>
+                VEHICLES
+</NavLink>,
+              <p
+                className="count"
+/>,
+              <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="nav favorite-nav"
+                to="/favorites"
+>
+                FAVORITES
+</NavLink>,
+            ],
+            "className": "nav-menu",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "PEOPLE",
+                "className": "nav",
+                "to": "/people",
+              },
+              "ref": null,
+              "rendered": "PEOPLE",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "PLANETS",
+                "className": "nav",
+                "to": "/planets",
+              },
+              "ref": null,
+              "rendered": "PLANETS",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "VEHICLES",
+                "className": "nav",
+                "to": "/vehicles",
+              },
+              "ref": null,
+              "rendered": "VEHICLES",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "count",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "FAVORITES",
+                "className": "nav favorite-nav",
+                "to": "/favorites",
+              },
+              "ref": null,
+              "rendered": "FAVORITES",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "header",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

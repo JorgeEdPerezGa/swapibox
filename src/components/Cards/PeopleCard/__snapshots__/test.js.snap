@@ -1,3 +1,439 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PeopleCard/> should match snapshot 1`] = `<PeopleCard />`;
+exports[`<PeopleCard/> should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PeopleCard />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <FavoriteButton
+          card={undefined}
+          favortieClass=""
+          handleFavorites={undefined}
+/>,
+        <h1
+          className="card-title card-title-person"
+/>,
+        <p>
+          birth year: 
+</p>,
+        <p>
+          eye color: 
+</p>,
+        <p>
+          height: 
+</p>,
+        <p>
+          mass: 
+</p>,
+        <p>
+          skin color: 
+</p>,
+        <p>
+          species: 
+</p>,
+        <p>
+          homeworld: 
+</p>,
+        <p>
+          homeworld population: 
+</p>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "card": undefined,
+          "favortieClass": "",
+          "handleFavorites": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "card-title card-title-person",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "birth year: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "birth year: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "eye color: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "eye color: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "height: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "height: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "mass: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "mass: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "skin color: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "skin color: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "species: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "species: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "homeworld: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "homeworld: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "homeworld population: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "homeworld population: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <FavoriteButton
+            card={undefined}
+            favortieClass=""
+            handleFavorites={undefined}
+/>,
+          <h1
+            className="card-title card-title-person"
+/>,
+          <p>
+            birth year: 
+</p>,
+          <p>
+            eye color: 
+</p>,
+          <p>
+            height: 
+</p>,
+          <p>
+            mass: 
+</p>,
+          <p>
+            skin color: 
+</p>,
+          <p>
+            species: 
+</p>,
+          <p>
+            homeworld: 
+</p>,
+          <p>
+            homeworld population: 
+</p>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "card": undefined,
+            "favortieClass": "",
+            "handleFavorites": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "card-title card-title-person",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "birth year: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "birth year: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "eye color: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "eye color: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "height: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "height: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "mass: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "mass: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "skin color: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "skin color: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "species: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "species: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "homeworld: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "homeworld: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "homeworld population: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "homeworld population: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
