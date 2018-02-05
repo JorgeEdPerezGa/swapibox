@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Helper from '../../helper';
 import CardListNav from '../../components/CardListNav';
 import CardList from '../CardList';
+import VehiclesVideo from '../../components/VehiclesVideo';
+import './style.css';
 
 class Vehicles extends Component {
   constructor() {
@@ -43,7 +45,7 @@ class Vehicles extends Component {
 
     return (
       <div>
-        <p>VEHICLES</p>
+        <VehiclesVideo />
         <CardListNav
           type = { this.state.vehicles }
           fetchFirst = { this.fetchFirst }

@@ -1,0 +1,15 @@
+.video-container {
+  height: auto;
+  width: 100%; }
+
+.page-title {
+  z-index: 1;
+  font-size: 100px;
+  position: absolute;
+  color: white;
+  left: 0;
+  top: 50%;
+  margin: 0;
+  width: 100%;
+  font-weight: 200;
+  text-align: center; }

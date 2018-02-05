@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Helper from '../../helper';
 import CardListNav from '../../components/CardListNav';
 import CardList from '../CardList';
+import PeopleVideo from '../../components/PeopleVideo';
+import './style.css';
 
 class People extends Component {
   constructor() {
@@ -42,7 +44,9 @@ class People extends Component {
 
     return (
       <div>
-        <p>PEOPLE</p>
+        <div className = 'video-container'>
+          <PeopleVideo />
+        </div>
         <CardListNav
           type = { this.state.people }
           fetchFirst = { this.fetchFirst }

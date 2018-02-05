@@ -2,7 +2,8 @@
   height: 30px;
   width: 30px;
   border: none;
-  margin: 0 12px 0 12px; }
+  margin: 0 12px 0 12px;
+  background: none; }
   .card-list-nav-button:hover {
     cursor: pointer; }
   .card-list-nav-button:disabled {

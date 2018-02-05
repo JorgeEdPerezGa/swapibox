@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PeopleCard from '../../components/Cards/PeopleCard';
 import PlanetCard from '../../components/Cards/PlanetCard';
 import VehicleCard from '../../components/Cards/VehicleCard';
+import './style.css';
 
 class CardList extends Component {
   constructor() {
@@ -75,7 +76,7 @@ class CardList extends Component {
       });
 
       return (
-        <section className = {`card-list-${this.props.title}`}>
+        <section className = {`card-list card-list-${this.props.title}`}>
           { cards }
         </section>
       );
@@ -87,7 +88,7 @@ class CardList extends Component {
   render() {
     console.log(this.state.favorites);
     return (
-      <div>
+      <div className = 'card-list'>
         {this.renderCards()}
       </div>
     );
