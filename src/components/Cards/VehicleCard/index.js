@@ -2,11 +2,13 @@ import React from 'react';
 import FavoriteButton from '../../FavoriteButton';
 import './style.css';
 
-const VehicleCard = ({ card, name, model, vehicleClass, passengers, manufacturer, handleFavorites }) => {
+const VehicleCard = ({ card, name, model, vehicleClass, passengers, manufacturer, favorite, handleFavorites }) => {
+  const favortieClass = favorite ? 'favorited' : '';
 
   return (
     <article className = 'card'>
       <FavoriteButton
+        favortieClass = { favortieClass }
         handleFavorites = { handleFavorites }
         card = {card}/>
       <h1 className = 'card-title card-title-vehicle'>{ name }</h1>

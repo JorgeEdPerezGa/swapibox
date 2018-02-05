@@ -48,7 +48,7 @@ class Helper {
         const species = fetchSpecies;
         const homeworld = fetchHomeworld.name;
         const homeworldPopulation = fetchHomeworld.population;
-        return { name, birthYear, height, mass, eyeColor, skinColor, species, homeworld, homeworldPopulation };
+        return {name, birthYear, height, mass, eyeColor, skinColor, species, homeworld, homeworldPopulation, favorite: false};
       });
       return Promise.all(people);
     } catch (error) {
@@ -76,7 +76,7 @@ class Helper {
         const climate = planet.climate;
         const population = planet.population;
         const residents = await this.fetchResidents(planet.residents);
-        return { name, terrain, climate, population, residents };
+        return {name, terrain, climate, population, residents, favorite: false};
       });
       return Promise.all(planets);
     } catch (error) {
@@ -104,7 +104,7 @@ class Helper {
         const manufacturer = vehicle.manufacturer;
         const vehicleClass = vehicle.vehicle_class;
         const passengers = vehicle.passengers;
-        return {name, model, manufacturer, vehicleClass, passengers};
+        return {name, model, manufacturer, vehicleClass, passengers, favorite: false};
       });
       return Promise.all(vehicles);
     } catch (error) {
