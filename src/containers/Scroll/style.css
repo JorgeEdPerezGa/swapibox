@@ -1,0 +1,51 @@
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 30vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1; }
+
+.scroll {
+  background-image: url("../../assets/background.gif");
+  background-size: cover;
+  color: #d5d57b;
+  font-size: 45px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Droid Sans", arial, verdana, sans-serif;
+  font-weight: 700;
+  color: #EBD71C;
+  letter-spacing: 4px; }
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  text-align: justify;
+  perspective: 500px; }
+
+.crawl {
+  width: 100%;
+  position: relative;
+  top: -100px;
+  transform-origin: 50% 100%;
+  animation: crawl 30s infinite linear; }
+
+.title, .episode {
+  font-size: 50px; }
+
+.text,
+.title,
+.episode {
+  text-align: center;
+  font-weight: 300; }
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(50deg) translateZ(0); }
+  100% {
+    top: -1500px;
+    transform: rotateX(0deg) translateZ(-2500deg); } }
