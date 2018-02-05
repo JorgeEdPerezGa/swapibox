@@ -41,8 +41,6 @@ class Planets extends Component {
   }
 
   render() {
-    console.log(this.state.planets);
-
     return (
       <div>
         <PlanetsVideo />
@@ -54,6 +52,7 @@ class Planets extends Component {
 
         <CardList
           title = { 'planets' }
+          handleFavorites = { this.props.handleFavorites }
           type = { this.state.planets }/>
       </div>
     );

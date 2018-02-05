@@ -10,26 +10,6 @@ class CardList extends Component {
     this.state = {};
   }
 
-  componentWillMount() {
-    this.setState({ favorites: [] });
-  }
-
-  handleFavorites = (card) => {
-    const favorites = this.state.favorites;
-    const removeFavorite = favorites.filter(cards => cards !== card);
-    this.toggleFavorite(card);
-    const newFavorites = [...favorites, card];
-    if (favorites.includes(card)){
-      return this.setState({ favorites: removeFavorite });
-    }
-    this.setState({ favorites: newFavorites });
-  }
-
-  toggleFavorite = (card) => {
-    console.log(card);
-    card.favorite = !card.favorite;
-  }
-
   renderCards = () => {
     if (this.props.type) {
       let cards = this.props.type.results.map( (card, index) => {
@@ -49,7 +29,7 @@ class CardList extends Component {
               homeworld = { card.homeworld }
               homeworldPopulation = { card.homeworldPopulation }
               favorite = { card.favorite }
-              handleFavorites = { this.handleFavorites }/>
+              handleFavorites = { this.props.handleFavorites }/>
           );
         }
 
@@ -63,7 +43,7 @@ class CardList extends Component {
               population = { card.population }
               residents = { card.residents }
               favorite = { card.favorite }
-              handleFavorites = { this.handleFavorites }/>
+              handleFavorites = { this.props.handleFavorites }/>
           );
         }
 
@@ -78,10 +58,9 @@ class CardList extends Component {
               passengers = { card.passengers }
               manufacturer = { card.manufacturer }
               favorite = { card.favorite }
-              handleFavorites = { this.handleFavorites }/>
+              handleFavorites = { this.props.handleFavorites }/>
           );
         }
-
       });
 
       return (

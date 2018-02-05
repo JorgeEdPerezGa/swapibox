@@ -54,6 +54,7 @@ class People extends Component {
           fetchLast = { this.fetchLast }/>
         <CardList
           title = { 'people' }
+          handleFavorites = { this.props.handleFavorites }
           type = { this.state.people }/>
       </div>
     );

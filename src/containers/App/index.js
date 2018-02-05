@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Routes from '../../components/Routes';
+import Main from '../Main';
 import './style.css';
 
 class App extends Component {
   render() {
     return (
       <div className='app'>
-        <Routes />
+        <Main />
       </div>
     );
   }
