@@ -5,6 +5,9 @@ import './style.css';
 const PeopleCard = ({ card, name, birthYear, eyeColor, height, mass, skinColor, species, homeworld, homeworldPopulation, handleFavorites }) => {
   return (
     <article className = 'card'>
+      <FavoriteButton
+        handleFavorites = { handleFavorites }
+        card = { card }/>
       <h1 className = 'card-title card-title-person'>{ name }</h1>
       <p>birth year: { birthYear }</p>
       <p>eye color: { eyeColor }</p>
@@ -14,9 +17,6 @@ const PeopleCard = ({ card, name, birthYear, eyeColor, height, mass, skinColor, 
       <p>species: { species }</p>
       <p>homeworld: { homeworld }</p>
       <p>homeworld population: { homeworldPopulation }</p>
-      <FavoriteButton
-        handleFavorites = { handleFavorites }
-        card = { card }/>
     </article>
   );
 };
