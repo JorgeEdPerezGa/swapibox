@@ -17,11 +17,17 @@ class CardList extends Component {
   handleFavorites = (card) => {
     const favorites = this.state.favorites;
     const removeFavorite = favorites.filter(cards => cards !== card);
+    this.toggleFavorite(card);
     const newFavorites = [...favorites, card];
     if (favorites.includes(card)){
       return this.setState({ favorites: removeFavorite });
     }
     this.setState({ favorites: newFavorites });
+  }
+
+  toggleFavorite = (card) => {
+    console.log(card);
+    card.favorite = !card.favorite;
   }
 
   renderCards = () => {
@@ -42,6 +48,7 @@ class CardList extends Component {
               species = { card.species }
               homeworld = { card.homeworld }
               homeworldPopulation = { card.homeworldPopulation }
+              favorite = { card.favorite }
               handleFavorites = { this.handleFavorites }/>
           );
         }
@@ -55,6 +62,7 @@ class CardList extends Component {
               climate = { card.climate }
               population = { card.population }
               residents = { card.residents }
+              favorite = { card.favorite }
               handleFavorites = { this.handleFavorites }/>
           );
         }
@@ -69,6 +77,7 @@ class CardList extends Component {
               vehicleClass = { card.vehicleClass }
               passengers = { card.passengers }
               manufacturer = { card.manufacturer }
+              favorite = { card.favorite }
               handleFavorites = { this.handleFavorites }/>
           );
         }
@@ -86,7 +95,6 @@ class CardList extends Component {
   }
 
   render() {
-    console.log(this.state.favorites);
     return (
       <div className = 'card-list'>
         {this.renderCards()}

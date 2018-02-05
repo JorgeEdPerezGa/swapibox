@@ -1,13 +1,18 @@
 .favorite-button {
   position: absolute;
   background: none;
-  background-image: url("../../assets/like.svg");
+  background-image: url("../../assets/favorite.svg");
   border: none;
   height: 30px;
   width: 30px;
   margin: 20px 0 0 245px; }
   .favorite-button:hover {
-    background-image: url("../../assets/like-hover.svg");
+    background-image: url("../../assets/favorite-hover.svg");
     cursor: pointer; }
   .favorite-button:focus {
     outline: none; }
+
+.favorited {
+  background-image: url("../../assets/favorite-selected.svg");
+  height: 30px;
+  width: 30px; }
