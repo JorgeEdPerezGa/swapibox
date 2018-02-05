@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './style.css';
+import PropTypes from 'prop-types';
 
 const CardListNav = ({ type, fetchFirst, handleFetch, fetchLast }) => {
   const fetch = type;
@@ -26,6 +27,13 @@ const CardListNav = ({ type, fetchFirst, handleFetch, fetchLast }) => {
         disabled = { disabledNext }></button>
     </div>
   );
+};
+
+CardListNav.propTypes = {
+  type: PropTypes.object,
+  fetchFirst: PropTypes.func,
+  handleFetch: PropTypes.func,
+  fetchLast: PropTypes.func
 };
 
 export default CardListNav;

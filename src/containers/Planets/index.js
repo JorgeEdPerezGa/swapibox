@@ -3,6 +3,7 @@ import Helper from '../../helper';
 import CardListNav from '../../components/CardListNav';
 import CardList from '../CardList';
 import PlanetsVideo from '../../components/PlanetsVideo';
+import PropTypes from 'prop-types';
 import './style.css';
 
 class Planets extends Component {
@@ -58,5 +59,9 @@ class Planets extends Component {
     );
   }
 }
+
+Planets.propTypes = {
+  handleFavorites: PropTypes.func
+};
 
 export default Planets;

@@ -3,6 +3,7 @@ import Helper from '../../helper';
 import CardListNav from '../../components/CardListNav';
 import CardList from '../CardList';
 import VehiclesVideo from '../../components/VehiclesVideo';
+import PropTypes from 'prop-types';
 import './style.css';
 
 class Vehicles extends Component {
@@ -58,5 +59,9 @@ class Vehicles extends Component {
     );
   }
 }
+
+Vehicles.propTypes = {
+  handleFavorites: PropTypes.func
+};
 
 export default Vehicles;
