@@ -6,10 +6,6 @@ import FavoriteCard from '../../components/Cards/FavoriteCard';
 import './style.css';
 
 class Favorites extends Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
 
   displayFavorites = () => {
     if (this.props.type.length > 0) {

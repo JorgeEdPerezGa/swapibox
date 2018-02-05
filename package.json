@@ -23,6 +23,8 @@
     "test:debug": "react-scripts --inspect-brk test --runInBand --env=jsdom"
   },
   "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.16.0",
     "eslint-plugin-react": "^7.6.1"
   }

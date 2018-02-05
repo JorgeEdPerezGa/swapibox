@@ -5,10 +5,6 @@ import VehicleCard from '../../components/Cards/VehicleCard';
 import './style.css';
 
 class CardList extends Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
 
   renderCards = () => {
     if (this.props.type) {

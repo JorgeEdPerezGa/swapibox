@@ -1,12 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './index';
+import Nav from './index';
 import setupTest from '../../setupTests';
 import { shallow } from 'enzyme';
 
-describe('<App/>', () => {
-  const wrapper = <App />;
-  
+describe('<Nav/>', () => {
+  const wrapper = <Nav />;
+
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });

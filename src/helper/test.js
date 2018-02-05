@@ -33,7 +33,7 @@ describe('helper', () => {
 
     it('should fetch people', async () => {
       const expected = { results: mock.people.results };
-      const person = [{'birthYear': '19BBY', 'eyeColor': 'blue', 'height': '172', 'homeworld': undefined, 'homeworldPopulation': undefined, 'mass': '77', 'name': 'Luke Skywalker', 'skinColor': 'fair', 'species': [undefined]}];
+      const person = [{'birthYear': '19BBY', 'eyeColor': 'blue', "favorite": false, 'height': '172', 'homeworld': undefined, 'homeworldPopulation': undefined, 'mass': '77', 'name': 'Luke Skywalker', 'skinColor': 'fair', 'species': [undefined]}];
 
       window.fetch =
       jest.fn().mockImplementation(() =>
@@ -150,7 +150,7 @@ describe('helper', () => {
 
     it('should fetch planets', async() => {
       const expected = { results: mock.planets.results };
-      const planet = [{'climate': 'temperate', 'name': 'Bespin', 'population': '6000000', 'residents': [undefined], 'terrain': 'gas giant'}];
+      const planet = [{'climate': 'temperate', "favorite": false, 'name': 'Bespin', 'population': '6000000', 'residents': [undefined], 'terrain': 'gas giant'}];
 
       window.fetch =
       jest.fn().mockImplementation(() =>
@@ -213,7 +213,7 @@ describe('helper', () => {
 
     it('should fetch vehicles', async () => {
       const expected = { results: mock.vehicles.results };
-      const vehicle = [{'manufacturer': 'Corellia Mining Corporation', 'model': 'Digger Crawler', 'name': 'Sand Crawler', 'passengers': '30', 'vehicleClass': 'wheeled'}];
+      const vehicle = [{'manufacturer': 'Corellia Mining Corporation', "favorite": false, 'model': 'Digger Crawler', 'name': 'Sand Crawler', 'passengers': '30', 'vehicleClass': 'wheeled'}];
       const resolvedPromise = await helper.fetchVehicles(expected);
 
       window.fetch =
