@@ -65,7 +65,11 @@ class CardList extends Component {
         </section>
       );
     } else {
-      return ( <div>loading</div> );
+      return (
+        <div>
+          <img src = 'https://cdnb.artstation.com/p/assets/images/images/003/827/899/original/matthew-garwin-loading-vector.gif?1477723699' height='200px' width='200px'/>
+        </div>
+      );
     }
   }
 
