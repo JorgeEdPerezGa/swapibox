@@ -1,9 +1,12 @@
 .nav-header {
+  position: fixed;
+  z-index: 2;
+  font-weight: 200;
   display: flex;
   justify-content: space-between;
   background-color: #222;
-  padding: 20px;
   color: white;
+  width: 100%;
 }
 
 .nav-menu {

@@ -1,10 +1,11 @@
 import React from 'react';
 import FavoriteButton from '../../FavoriteButton';
+import './style.css';
 
 const PeopleCard = ({ card, name, birthYear, eyeColor, height, mass, skinColor, species, homeworld, homeworldPopulation, handleFavorites }) => {
   return (
     <article className = 'card'>
-      <h1>{ name }</h1>
+      <h1 className = 'card-title card-title-person'>{ name }</h1>
       <p>birth year: { birthYear }</p>
       <p>eye color: { eyeColor }</p>
       <p>height: { height }</p>
