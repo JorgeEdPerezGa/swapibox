@@ -41,8 +41,6 @@ class Vehicles extends Component {
   }
 
   render() {
-    console.log(this.state.vehicles);
-
     return (
       <div>
         <VehiclesVideo />
@@ -54,6 +52,7 @@ class Vehicles extends Component {
 
         <CardList
           title = { 'vehicles' }
+          handleFavorites = { this.props.handleFavorites }
           type = { this.state.vehicles }/>
       </div>
     );
