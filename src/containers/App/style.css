@@ -37,4 +37,11 @@
     margin-top: 35px; }
   .page-title {
     font-size: 100px;
+    top: 10%; } }
+
+@media screen and (max-width: 500px) {
+  .background-video {
+    margin-top: 35px; }
+  .page-title {
+    font-size: 100px;
     top: 12%; } }
