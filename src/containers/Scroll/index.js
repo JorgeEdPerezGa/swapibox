@@ -23,23 +23,25 @@ class Scroll extends Component {
   }
 
   render (){
-    const scroll = this.state.scroll;
-    if (!this.state.scroll) {
-      return (
-        <div>loading</div>
-      );
-    }
+    // const scroll = this.state.scroll;
+    // if (!this.state.scroll) {
+    //   return (
+    //     <div>loading</div>
+    //   );
+    // }
 
     return (
       <div className='scroll'>
-        <div className='fade'></div>
+        <p className='main-page-title'>SWAPIBOX</p>
+        <p className='main-page-description'>STAR WARS ENCYCLOPEDIA</p>
+        {/* <div className='fade'></div>
         <div className='star-wars'>
-          <div className='crawl'>
-            <p className='title'>{ scroll.title }</p>
+          <div className='crawl'> */}
+            {/* <p className='title'>{ scroll.title }</p>
             <p className='episode'>{ scroll.episode }</p>
-            <p className='text'>{ scroll.text }</p>
-          </div>
-        </div>
+            <p className='text'>{ scroll.text }</p> */}
+          {/* </div>
+        </div> */}
       </div>
     );
   }
