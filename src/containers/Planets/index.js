@@ -44,7 +44,12 @@ class Planets extends Component {
   render() {
     return (
       <div>
-        <PlanetsVideo />
+        <div className = 'video-container'>
+          <p className = 'page-title title-planets'>PLANETS</p>
+          <div className = 'planets-video-container'>
+            <PlanetsVideo />
+          </div>
+        </div>
         <CardListNav
           type = { this.state.planets }
           fetchFirst = { this.fetchFirst }
