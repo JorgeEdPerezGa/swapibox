@@ -1,3 +1,15 @@
 .video-container {
   height: auto;
   width: 100%; }
+
+.page-title {
+  font-family: 'Unica One', cursive;
+  z-index: 1;
+  font-size: 350px;
+  position: absolute;
+  top: 20%;
+  margin: 0;
+  width: 100%; }
+
+.title-people {
+  color: #6d4f4f; }

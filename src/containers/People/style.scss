@@ -3,16 +3,18 @@
   width: 100%;
 }
 
-// .page-title {
-//   z-index: 1;
-//   font-size: 150px;
-//   position: absolute;
-//   color: white;
-//   left: 0;
-//   top: 35%;
-//   padding: 0;
-//   margin: 0;
-//   width: 100%;
-//   font-weight: 100;
-//   text-align: center;
-// }
+.page-title {
+  font-family: 'Unica One', cursive;
+  z-index: 1;
+  // font-size: 200px;
+  font-size: 350px;
+  position: absolute;
+  // top: 16%;
+  top: 20%;
+  margin: 0;
+  width: 100%;
+}
+
+.title-people {
+  color: #6d4f4f;
+}

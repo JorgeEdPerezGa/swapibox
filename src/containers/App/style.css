@@ -2,3 +2,39 @@
   font-family: 'Roboto', sans-serif;
   text-align: center;
   background: black; }
+
+@media screen and (max-width: 1400px) {
+  .page-title {
+    font-size: 300px;
+    top: 6%; } }
+
+@media screen and (max-width: 1000px) {
+  .page-title {
+    font-size: 200px;
+    top: 6%; } }
+
+@media screen and (max-width: 900px) {
+  .page-title {
+    font-size: 190px;
+    top: 11%; } }
+
+@media screen and (max-width: 800px) {
+  .background-video {
+    margin-top: 0; } }
+
+@media screen and (max-width: 650px) {
+  .page-title {
+    font-size: 180px;
+    top: 8%; } }
+
+@media screen and (max-width: 600px) {
+  .page-title {
+    font-size: 100px;
+    top: 10%; } }
+
+@media screen and (max-width: 550px) {
+  .background-video {
+    margin-top: 35px; }
+  .page-title {
+    font-size: 100px;
+    top: 12%; } }
