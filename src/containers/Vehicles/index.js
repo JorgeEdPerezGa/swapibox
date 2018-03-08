@@ -44,7 +44,10 @@ class Vehicles extends Component {
   render() {
     return (
       <div>
-        <VehiclesVideo />
+        <div className = 'video-container'>
+          <p className = 'page-title title-vehicles'>VEHICLES</p>
+          <VehiclesVideo />
+        </div>
         <CardListNav
           type = { this.state.vehicles }
           fetchFirst = { this.fetchFirst }

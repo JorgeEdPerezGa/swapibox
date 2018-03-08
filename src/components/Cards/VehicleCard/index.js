@@ -1,5 +1,6 @@
 import React from 'react';
 import FavoriteButton from '../../FavoriteButton';
+import PropTypes from 'prop-types';
 import './style.css';
 
 const VehicleCard = ({ card, name, model, vehicleClass, passengers, manufacturer, favorite, handleFavorites }) => {
@@ -18,6 +19,17 @@ const VehicleCard = ({ card, name, model, vehicleClass, passengers, manufacturer
       <p>manufacturer: { manufacturer }</p>
     </article>
   );
+};
+
+VehicleCard.propTypes = {
+  handleFavorites: PropTypes.func,
+  card: PropTypes.object,
+  name: PropTypes.string,
+  vehicleClass: PropTypes.string,
+  model: PropTypes.string,
+  passengers: PropTypes.string,
+  manufacturer: PropTypes.string,
+  favorite: PropTypes.string
 };
 
 export default VehicleCard;

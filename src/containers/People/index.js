@@ -46,7 +46,7 @@ class People extends Component {
     return (
       <div>
         <div className = 'video-container'>
-          {/* <p className = 'page-title'>PEOPLE</p> */}
+          <p className = 'page-title title-people'>PEOPLE</p>
           <PeopleVideo />
         </div>
         <CardListNav
